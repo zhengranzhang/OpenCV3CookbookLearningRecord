@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1B80D051-D2A7-4584-A4BD-1C7D336AA2B3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>testopencv</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\VTK\include\vtk-6.3;C:\Program Files\VTK\include;C:\OpenCV\3.2.0\opencv\localbuild\install\include;C:\OpenCV\3.2.0\opencv\localbuild\install\include\opencv2;C:\OpenCV\3.2.0\opencv\localbuild\install\include\opencv;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\VTK\lib;C:\OpenCV\3.2.0\opencv\localbuild\install\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_aruco320d.lib;opencv_bgsegm320d.lib;opencv_bioinspired320d.lib;opencv_calib3d320d.lib;
+
+opencv_ccalib320d.lib;
+
+opencv_core320d.lib;
+
+opencv_datasets320d.lib;
+
+opencv_dnn320d.lib;
+
+opencv_dpm320d.lib
+
+;opencv_face320d.lib;
+
+opencv_features2d320d.lib;
+
+opencv_flann320d.lib;
+
+opencv_fuzzy320d.lib;
+
+opencv_highgui320d.lib;
+
+opencv_imgcodecs320d.lib
+
+;opencv_imgproc320d.lib
+
+;opencv_line_descriptor320d.lib;
+
+opencv_ml320d.lib;
+
+opencv_objdetect320d.lib;
+
+opencv_optflow320d.lib;
+
+opencv_phase_unwrapping320d.lib;
+
+opencv_photo320d.lib
+
+;opencv_plot320d.lib
+
+;opencv_reg320d.lib;
+
+opencv_rgbd320d.lib;
+
+opencv_saliency320d.lib
+
+;opencv_shape320d.lib
+
+;opencv_stereo320d.lib
+
+;opencv_stitching320d.lib;
+
+opencv_structured_light320d.lib;
+
+opencv_superres320d.lib;
+
+opencv_surface_matching320d.lib;
+
+opencv_text320d.lib
+
+;opencv_tracking320d.lib
+
+;opencv_video320d.lib;
+
+opencv_videoio320d.lib;
+
+opencv_videostab320d.lib;
+opencv_viz320d.lib;
+opencv_xfeatures2d320d.lib;
+
+opencv_ximgproc320d.lib;
+
+opencv_xobjdetect320d.lib
+
+;opencv_xphoto320d.lib;vtkalglib-6.3.lib;vtkChartsCore-6.3.lib;vtkCommonColor-6.3.lib;vtkCommonComputationalGeometry-6.3.lib;vtkCommonCore-6.3.lib;vtkCommonDataModel-6.3.lib;vtkCommonExecutionModel-6.3.lib;vtkCommonMath-6.3.lib;vtkCommonMisc-6.3.lib;vtkCommonSystem-6.3.lib;vtkCommonTransforms-6.3.lib;vtkDICOMParser-6.3.lib;vtkDomainsChemistry-6.3.lib;vtkexoIIc-6.3.lib;vtkexpat-6.3.lib;vtkFiltersAMR-6.3.lib;vtkFiltersCore-6.3.lib;vtkFiltersExtraction-6.3.lib;vtkFiltersFlowPaths-6.3.lib;vtkFiltersGeneral-6.3.lib;vtkFiltersGeneric-6.3.lib;vtkFiltersGeometry-6.3.lib;vtkFiltersHybrid-6.3.lib;vtkFiltersHyperTree-6.3.lib;vtkFiltersImaging-6.3.lib;vtkFiltersModeling-6.3.lib;vtkFiltersParallel-6.3.lib;vtkFiltersParallelImaging-6.3.lib;vtkFiltersProgrammable-6.3.lib;vtkFiltersSelection-6.3.lib;vtkFiltersSMP-6.3.lib;vtkFiltersSources-6.3.lib;vtkFiltersStatistics-6.3.lib;vtkFiltersTexture-6.3.lib;vtkFiltersVerdict-6.3.lib;vtkfreetype-6.3.lib;vtkftgl-6.3.lib;vtkGeovisCore-6.3.lib;vtkgl2ps-6.3.lib;vtkhdf5-6.3.lib;vtkhdf5_hl-6.3.lib;vtkImagingColor-6.3.lib;vtkImagingCore-6.3.lib;vtkImagingFourier-6.3.lib;vtkImagingGeneral-6.3.lib;vtkImagingHybrid-6.3.lib;vtkImagingMath-6.3.lib;vtkImagingMorphological-6.3.lib;vtkImagingSources-6.3.lib;vtkImagingStatistics-6.3.lib;vtkImagingStencil-6.3.lib;vtkInfovisCore-6.3.lib;vtkInfovisLayout-6.3.lib;vtkInteractionImage-6.3.lib;vtkInteractionStyle-6.3.lib;vtkInteractionWidgets-6.3.lib;vtkIOAMR-6.3.lib;vtkIOCore-6.3.lib;vtkIOEnSight-6.3.lib;vtkIOExodus-6.3.lib;vtkIOExport-6.3.lib;vtkIOGeometry-6.3.lib;vtkIOImage-6.3.lib;vtkIOImport-6.3.lib;vtkIOInfovis-6.3.lib;vtkIOLegacy-6.3.lib;vtkIOLSDyna-6.3.lib;vtkIOMINC-6.3.lib;vtkIOMovie-6.3.lib;vtkIONetCDF-6.3.lib;vtkIOParallel-6.3.lib;vtkIOParallelXML-6.3.lib;vtkIOPLY-6.3.lib;vtkIOSQL-6.3.lib;vtkIOVideo-6.3.lib;vtkIOXML-6.3.lib;vtkIOXMLParser-6.3.lib;vtkjpeg-6.3.lib;vtkjsoncpp-6.3.lib;vtklibxml2-6.3.lib;vtkmetaio-6.3.lib;vtkNetCDF-6.3.lib;vtkNetCDF_cxx-6.3.lib;vtkoggtheora-6.3.lib;vtkParallelCore-6.3.lib;vtkpng-6.3.lib;vtkproj4-6.3.lib;vtkRenderingAnnotation-6.3.lib;vtkRenderingContext2D-6.3.lib;vtkRenderingContextOpenGL-6.3.lib;vtkRenderingCore-6.3.lib;vtkRenderingFreeType-6.3.lib;vtkRenderingGL2PS-6.3.lib;vtkRenderingImage-6.3.lib;vtkRenderingLabel-6.3.lib;vtkRenderingLIC-6.3.lib;vtkRenderingLOD-6.3.lib;vtkRenderingOpenGL-6.3.lib;vtkRenderingVolume-6.3.lib;vtkRenderingVolumeOpenGL-6.3.lib;vtksqlite-6.3.lib;vtksys-6.3.lib;vtktiff-6.3.lib;vtkverdict-6.3.lib;vtkViewsContext2D-6.3.lib;vtkViewsCore-6.3.lib;vtkViewsInfovis-6.3.lib;vtkzlib-6.3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BGFGSegmentor.h" />
+    <ClInclude Include="CameraCalibrator.h" />
+    <ClInclude Include="featuretracker.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="robustMatcher.h" />
+    <ClInclude Include="targetMatcher.h" />
+    <ClInclude Include="videoprocessor.h" />
+    <ClInclude Include="visualTracker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CameraCalibrator.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="testopencv.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
