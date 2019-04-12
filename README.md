@@ -1,8 +1,3 @@
-# Git 教程
+# Reading notes about OpenCV Computer Vision Application Programming Cookbook
 
-
-- feature-A
-
-- fix-B
-
-- feature-C
+- version-1
