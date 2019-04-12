@@ -1,5 +1,4 @@
 # Reading notes about OpenCV Computer Vision Application Programming Cookbook
-
-- version-1
+You can [visit author's github](https://github.com/laganiere/OpenCV3Cookbook) 
 - version-2
 - version-3
