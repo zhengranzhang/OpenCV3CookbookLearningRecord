@@ -1,5 +1,7 @@
 # Reading notes about OpenCV Computer Vision Application Programming Cookbook
 
+https://blog.csdn.net/asmartkiller/article/details/89314622
+
 - version-2
 OpenCV计算机视觉编程攻略（第2版）.pdf is the chinese version of the book.
 - version-3
